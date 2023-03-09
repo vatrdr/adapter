@@ -1,53 +1,53 @@
 {
-  "name": "vatradar/adapter",
-  "description": "Adapters for 3rd party libraries for abstraction purposes",
-  "type": "library",
-  "license": "proprietary",
-  "autoload": {
-    "psr-4": {
-      "VatRadar\\Adapter\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Tests\\Adapter\\": "tests/"
-    }
-  },
-  "authors": [
-    {
-      "name": "VatRadar Devs",
-      "email": "dev@vatradar.net"
-    }
-  ],
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "require": {
-    "php": ">=8.1",
-    "bunny/bunny": "@dev",
-    "psr/http-client": "^1.0",
-    "influxdata/influxdb-client-php": "^3",
-    "clue/redis-react": "^3@dev",
-    "tedivm/stash": "^0.17.6"
-  },
-  "require-dev": {
-    "roave/security-advisories": "dev-latest",
-    "phpstan/phpstan": "^1.10",
-    "phpstan/phpstan-deprecation-rules": "^1.1",
-    "phpunit/phpunit": "^10.0",
-    "phpstan/extension-installer": "^1.2",
-    "spaze/phpstan-disallowed-calls": "^2.11",
-    "phpstan/phpstan-phpunit": "^1.3"
-  },
-  "config": {
-    "bin-dir": "vbin",
-    "sort-packages": true,
-    "allow-plugins": {
-      "phpstan/extension-installer": true
-    }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-main": "0.6-dev"
-    }
-  }
+    "name": "vatradar/adapter",
+    "description": "Adapters for 3rd party libraries for abstraction purposes",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "VatRadar\\Adapter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Adapter\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "VatRadar Devs",
+            "email": "dev@vatradar.net"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "bunny/bunny": "^0.5",
+        "clue/redis-react": "^3@dev",
+        "influxdata/influxdb-client-php": "^3",
+        "psr/http-client": "^1.0",
+        "tedivm/stash": "^0.17.6"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.2",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-phpunit": "^1.3",
+        "phpunit/phpunit": "^10.0",
+        "roave/security-advisories": "dev-latest",
+        "spaze/phpstan-disallowed-calls": "^2.11"
+    },
+    "config": {
+        "bin-dir": "vbin",
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.6-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
