@@ -1,0 +1,9 @@
+### VatRadar subpackage template
+## Project
+.idea/
+.env
+
+### Composer template
+composer.phar
+/vendor/
+/vbin/
